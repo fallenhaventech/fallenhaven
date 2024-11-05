@@ -1,9 +1,186 @@
+<!DOCTYPE html>
 <html>
+<!-- Head Section -->
+
+<head>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <title>HTML Cheatsheet</title>
+</head>
+
+<!-- Body Section -->
 
 <body>
-  <h1>Rodolfo Coelho</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <h1 class="h1heading">HTML Cheatsheet</h1>
+    <!-- Html Elements and Structures -->
+    <section>
+        <h2 class="h2sectionheading">HTML Elements and Structures</h2><br>
+
+        <table>
+            <tr>
+                <td>
+                    <p class="subsectext">&lt;a&gt Anchor Element</p><br>
+                </td>
+                <td>
+                    <p class="tabletext">Anchor Element defines a link
+                        to a website, image, location etc</p>
+                    </td=>
+                <td id="cellcode">
+                    <p class="codetext">Text Link:<br>
+                        &lta href="http://website.extension"&gt Related Text &lt/a&gt
+                        <br>&lta href="http://website.extension"&gt &ltimg src="logo.jpg"&gt Related Text &lt/a&gt
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="subsectext">&lt;head&gt Head Element</p><br>
+                </td>
+                <td>
+                    <p class="tabletext">Head Element defines the metadata content
+                        not displayed on <br> the page, page title, links
+                        to stylesheets etc</p>
+
+                </td>
+                <td id="cellcode">
+                    <p class="codetext">&lt!DOCTYPE HTML&gt<br>
+                        &lthtml&gt<br>&emsp;&lthead&gt<br>
+                        &emsp;&emsp;&lt!-- Metadata is contained here --&gt<br>
+                        &emsp;&lt/head&gt<br>&lt/html&gt</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="subsectext">&lt;target&gt Target Atribute</p><br>
+                </td>
+                <td>
+                    <p class="tabletext">Target specifies where the hyperlink will open</p>
+
+                </td>
+                <td id="cellcode">
+                    <p class="codetext">
+                        &lta href="https://www.website.ext" target="_blank"&gt<br><br> Will open this site in a new
+                        tab&lt/a&gt</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Html Forms -->
+    <section>
+        <br>
+        <h2 class="h2sectionheading">HTML Forms</h2><br>
+
+        <table>
+            <tr>
+                <td>
+                    <p class="subsectext">&lt;form&gt Form Element</p><br>
+                </td>
+                <td>
+                    <p class="tabletext">Form element is used to collect and send information to an external source. Can
+                        contain various input elements.</p>
+                    </td=>
+                <td id="cellcode">
+                    <p class="codetext">Declaration:<br>
+                        &ltform method="post" action="http://server"&gt;<br>Input Your Name Please?
+                        <br>&ltinput type="text" name="fname"&gt <br>
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="subsectext">&lt;input&gt Types of input</p><br>
+                </td>
+                <td>
+                    <p class="tabletext">Html input elements /p>
+
+                </td>
+                <td id="cellcode">
+                    <p class="codetext">&ltinput type="number" name="balance" /&gt<br>
+                        &ltinput type="text" name="textfield" /&gt<br>
+                        &ltinput type="password" name="pwd" /&gt<br>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="subsectext">Submitting a Form</p><br>
+                </td>
+                <td>
+                    <p class="tabletext">After collecting the information we have to submit to somewhere else. Uses the
+                        action and submit.</p>
+
+                </td>
+                <td id="cellcode">
+                    <p class="codetext">
+                        &ltform action="/index3.html" method="PUT"&gt &lt/form&gt</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Html Tables -->
+    <section>
+        <br>
+        <h2 class="h2sectionheading">HTML Tables</h2><br>
+
+        <table>
+            <tr>
+                <td>
+                    <p class="subsectext">&lttable&gt Table Element</p><br>
+                </td>
+                <td>
+                    <p class="tabletext">Table used to represent a bidimensional table</p>
+                    </td=>
+                <td id="cellcode">
+                    <p class="codetext">Table declaration:<br>
+                        &lttable&gt
+                        <br>&emsp; &lt!-- rows and columns go here --&gt<br>
+                        &lt/table&gt
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="subsectext">&lttr&gtTable Row<br>&lttd&gtTable Data<br>&ltth&gtTable Heading</p><br>
+                </td>
+                <td>
+                    <p class="tabletext"> tr is used do add rows to the table, th adds some table headings and finally
+                        td adds content/data to the cells </p>
+
+                </td>
+                <td id="cellcode">
+                    <p class="codetext"><br>&lttable&gt<br>&ensp; &lttr&gt<br>&emsp; &lttd&gt<br>&emsp; &lt/td&gt<br>&ensp; &lt/tr&gt<br>&lt/table&gt
+                       </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="subsectext">&ltcolspan&gtColumn Span<br>&ltrowspan&gtRow Span</p><br>
+                </td>
+                <td>
+                    <p class="tabletext">Colspan indicates over how many colums the given data field should span, and
+                        rowspan does the same, but over a number of rows</p>
+
+                </td>
+                <td id="cellcode">
+                    <p class="codetext">
+                        &lta href="https://www.website.ext" target="_blank"&gt<br><br> Will open this site in a new
+                        tab&lt/a&gt</p>
+                </td>
+            </tr>
+        </table>
+    </section>
 </body>
+
+<!-- Footer Section -->
+<footer>
+    <h6 id="footertext">by Rodolfo Coelho - CodeCademy Trainee NOV2024<h6>
+</footer>
 
 </html>
